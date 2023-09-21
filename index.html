@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Animes </title>
+    <title> Prompts Fantásticos </title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
     <script>document.documentElement.className += " js";</script>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
-    <nav class="menu js-menu">
+    <nav class="menu" data-menu="suave">
         <ul>
-            <li><a href="#animes">Animes</a></li>
-            <li><a href="#faq">Faq</a></li>
-            <li><a href="#contato">Contato</a></li>
-            <li><a href="https://github.com/gabestk" target="_blank">Dev →</a></li>
+            <li><a href="#modelos">Modelos</a></li>
+            <li><a href="#classes">Classes</a></li>
+            <li><a href="#autores">Autores</a></li>
+            <li><a href="#aleatorio">Aleatório</a></li>
+            <li><a href="https://github.com/gabestk" target="_blank">Login →</a></li>
         </ul>
     </nav>
-    <section class="grid-section animes js-scroll" id="animes">
-        <h1 class="titulo">Melhores Animes</h1>
-        <ul class="animes-lista js-tabmenu">
+    <section class="grid-section modelos" data-anime="scroll" id="modelos">
+        <h1 class="titulo">Prompts Fantásticos</h1>
+        <ul class="modelos-lista" data-tab="menu">
             <li>
                 <img src="img/castelo.jpg">
             </li>
@@ -41,8 +42,8 @@
             </li>
 
         </ul>
-        <div class="anime-descricao js-tabcontent">
-            <section>
+        <div class="modelos-descricao" data-tab="content">
+            <section data-anime="show-down">
                 <h2>Castelo Animado</h2>
                 <p>
                     Uma bruxa lança uma terrível maldição sobre a jovem Sophie 
@@ -51,7 +52,7 @@
                     ajudá-la a reverter o feitiço.   
                 </p>
             </section>
-            <section>
+            <section data-anime="show-down">
                 <h2>One Piece - Red</h2>
                 <p>
                     Uta, a cantora mais amada do planeta, cuja voz foi descrita 
@@ -64,7 +65,7 @@
                     estava esperando. Mas a história começa com uma chocante revelação.  
                 </p>
             </section>
-            <section>
+            <section data-anime="show-down">
                 <h2>Suzume no Tojimari</h2>
                 <p>
                     Suzume no Tojimari acompanha dois amantes desafortunatos. 
@@ -77,7 +78,7 @@
                     que jaz do outro lado. Agora, começa a "jornada de fechar portas" de Suzume.   
                 </p>
             </section>
-            <section>
+            <section data-anime="show-down">
                 <h2>A Voz do Silêncio</h2>
                 <p>
                     A história de Koe no Katachi gira em torno de Shōko Nishimiya, uma estudante 
@@ -91,7 +92,7 @@
 
                 </p>
             </section>
-            <section>
+            <section data-anime="show-down">
                 <h2>O Tempo com Você</h2>
                 <p>
                     A história gira em torno de um garoto do ensino médio chamado Hodaka, que deixa 
@@ -103,7 +104,7 @@
                     mas felizes. Hina também tem um certo poder: o poder de parar a chuva e limpar o céu. 
                 </p>
             </section>
-            <section>
+            <section data-anime="show-down">
                 <h2>Your Name</h2>
                 <p>
                     A jovem Mitsuha vive em uma pequena cidade nas montanhas chamada Itomori. Seu sonho 
@@ -117,9 +118,9 @@
             </section>
         </div>
     </section>
-    <section class="grid-section faq js-scroll" id="faq">
-        <h1 class="titulo">FAQ</h1>
-        <d1 class="faq-lista js-accordion">
+    <section class="grid-section classes" data-anime="scroll" id="classes">
+        <h1 class="titulo">Classes</h1>
+        <d1 class="classes-lista" data-anime="accordion">
             <dt>Os filmes são bons?</dt>
             <dd>São sim, confia.</dd>
             <dt>Aonde encontro eles?</dt>
@@ -128,8 +129,8 @@
             <dd>Depende, a maioria encontra legendado com dublagem em japonês, mas alguns tem a dublagem brasileira.</dd>
         </d1>
     </section>
-    <section class="grid-section contato js-scroll" id="contato">
-        <h1 class="titulo">Contato</h1>
+    <section class="grid-section contato" data-anime="scroll" id="autores">
+        <h1 class="titulo">Autores</h1>
         <div class="mapa">
             <img src="img/mapa.jpg">
         </div>
@@ -144,5 +145,6 @@
         <p>Todos os direitos reservados.</p>
     </footer>
     <script src="script.js"></script>
+    <script src="animacoes.js"></script>
 </body>
 </html>
