@@ -10,141 +10,428 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
-    <nav class="menu" data-menu="suave">
-        <ul>
-            <li><a href="#modelos">Modelos</a></li>
-            <li><a href="#classes">Classes</a></li>
-            <li><a href="#autores">Autores</a></li>
-            <li><a href="#aleatorio">Aleatório</a></li>
-            <li><a href="https://github.com/gabestk" target="_blank">Login →</a></li>
-        </ul>
-    </nav>
-    <section class="grid-section modelos" data-anime="scroll" id="modelos">
-        <h1 class="titulo">Prompts Fantásticos</h1>
-        <ul class="modelos-lista" data-tab="menu">
-            <li>
-                <img src="img/castelo.jpg">
-            </li>
-            <li>
-                <img src="img/red.jpg">
-            </li>
-            <li>
-                <img src="img/suzume.jpg">
-            </li>
-            <li>
-                <img src="img/voz.jpg">
-            </li>
-            <li>
-                <img src="img/weathering.jpg">
-            </li>
-            <li>
-                <img src="img/your.jpg">
-            </li>
+    <div class = "grid-container">
+        <nav class="menu" data-menu="suave">
+            <ul>
+                <li><a href="#modelos">Modelos</a></li>
+                <li><a href="#classes">Classes</a></li>
+                <li><a href="#autores">Autores</a></li>
+                <li><a href="#aleatorio">Aleatório</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a data-modal="abrir" href="#login">Login →</a></li>
+            </ul>
+        </nav>
+        <section class="grid-section modelos" data-anime="scroll" id="modelos">
+            <h1 class="titulo">Modelos</h1>
+            <nav class="modelos-menu">
+                <ul>
+                    <li><a href="#midjourney" data-tab="midjourney">MidJourney</a></li>
+                    <li><a href="#stablediffusion" data-tab="stablediffusion">Stable Diffusion</a></li>
+                    <li><a href="#openjourney" data-tab="openjourney">Openjourney</a></li>
+                </ul>
+            </nav>
+            <ul class="modelos-lista ativo" data-tab="menu" data-anime="show-down" id="midjourney" >
+                <li><img src="img/midjourney/midjourney.webp"></li>
+                <li><img src="img/midjourney/midjourney2.webp"></li>
+                <li><img src="img/midjourney/midjourney3.webp"></li>
+                <li><img src="img/midjourney/midjourney4.webp"></li>
+                <li><img src="img/midjourney/midjourney5.webp"></li>
+            </ul>
+            <ul class="modelos-lista" data-tab="menu" data-anime="show-down" id="stablediffusion">
+                <li><img src="img/stablediffusion/stablediffusion.webp"></li>
+                <li><img src="img/stablediffusion/stablediffusion2.webp"></li>
+                <li><img src="img/stablediffusion/stablediffusion3.webp"></li>
+                <li><img src="img/stablediffusion/stablediffusion4.webp"></li>
+                <li><img src="img/stablediffusion/stablediffusion5.webp"></li>
+            </ul>
+            <ul class="modelos-lista" data-tab="menu" data-anime="show-down" id="openjourney">
+                <li><img src="img/openjourney/openjourney.webp"></li>
+                <li><img src="img/openjourney/openjourney2.webp"></li>
+                <li><img src="img/openjourney/openjourney3.webp"></li>
+                <li><img src="img/openjourney/openjourney4.webp"></li>
+                <li><img src="img/openjourney/openjourney5.webp"></li>
+            </ul>
+            <div class="modelos-descricao" data-tab="content">
+                <section data-anime="show-down">
+                    <h2>Midjourney</h2>
+                    <p><b>Prompt:</b></p>
+                    <p>
+                        A colorful digital artwork of a woman's head and branches, 
+                        in the style of haunting houses, graceful surrealism, depictions of urban life, 
+                        dark sky-blue and orange, portraitures with hidden meanings, caricature-like illustrations,
+                        metropolis meets nature --ar 69:128 --s 750 --niji 5  
+                    </p>
+                    <p><b>Autor:</b></p>
+                    <p>
+                        NorthmoorAI
+                    </p>
+                    <p><b>URL:</b></p>
+                    <p>
+                        <a href = "https://prompthero.com/prompt/6efe2951bf8" target="_blank"> https://prompthero.com/prompt/6efe2951bf8 </a>
+                    </p>
+                </section>
+                <section data-anime="show-down">
+                    <h2>Midjourney</h2>
+                    <p><b>Prompt:</b></p>
+                    <p>
+                        A woman sitting at a table with a cup of tea, by Ross Tran, fantasy art, green neon, 
+                        with horns, artwork in the style of guweiz, discord profile picture --ar 4:7 
+                        --style expressive --s 700 --niji  
+                    </p>
+                    <p><b>Autor:</b></p>
+                    <p>
+                        OutOfReality
+                    </p>
+                    <p><b>URL:</b></p>
+                    <p>
+                        <a href = "https://prompthero.com/prompt/5c79d55aaa2" target="_blank"> https://prompthero.com/prompt/5c79d55aaa2  </a>
+                    </p>
+                </section>
+                <section data-anime="show-down">
+                    <h2>Midjourney</h2>
+                    <p><b>Prompt:</b></p>
+                    <p>
+                        Samurai stands at sunset in japan and looks into the distance, in dynamics, 
+                        highly detailed, packed with hidden details, style, high dynamic range, hyper realistic, 
+                        dramatic light, realistic attention to detail, highly detailed, 8k, UHD 
+                    </p>
+                    <p><b>Autor:</b></p>
+                    <p>
+                        Akasyan
+                    </p>
+                    <p><b>URL:</b></p>
+                    <p>
+                        <a href = "https://prompthero.com/prompt/3fb4c139df5" target="_blank"> https://prompthero.com/prompt/3fb4c139df5  </a>
+                    </p>
+                </section>
+                <section data-anime="show-down">
+                    <h2>Midjourney</h2>
+                    <p><b>Prompt:</b></p>
+                    <p>
+                        Spider man in dynamics, highly detailed, packed with hidden details, style, high dynamic range, hyper realistic, 
+                        realistic attention to detail, highly detailed, 32K, intense close - ups, uhd image, realism, colorful realism, 
+                        --ar 71:121 --s 750 --niji 5
+                    </p>
+                    <p><b>Autor:</b></p>
+                    <p>
+                        Akasyan
+                    </p>
+                    <p><b>URL:</b></p>
+                    <p>
+                        <a href = "https://prompthero.com/prompt/0d7386b6b19" target="_blank"> https://prompthero.com/prompt/0d7386b6b19  </a>
+                    </p>
+                </section>
+                <section data-anime="show-down">
+                    <h2>Midjourney</h2>
+                    <p><b>Prompt:</b></p>
+                    <p>
+                        Poster art for the collection of the asian woman, in the style of gloomy, dark orange and white, dynamic anime, 
+                        realistic watercolors, nintencore, weathercore, mysterious realism --ar 69:128 --s 750 --niji 5
+                    </p>
+                    <p><b>Autor:</b></p>
+                    <p>
+                        NorthmoorAI
+                    </p>
+                    <p><b>URL:</b></p>
+                    <p>
+                        <a href = "https://prompthero.com/prompt/d307cfd95d3" target="_blank"> https://prompthero.com/prompt/d307cfd95d3  </a>
+                    </p>
+                </section>
+                <section data-anime="show-down">
+                    <h2>Stable Diffusion</h2>
+                    <p><b>Prompt:</b></p>
+                    <p>
+                        A happy cartoon image, Pixar Style,, perfect composition, beautiful detailed intricate insanely detailed octane render trending on artstation, 
+                        8 k artistic photography, photorealistic concept art, soft natural volumetric cinematic perfect light, chiaroscuro, award - winning photograph, 
+                        masterpiece, oil on canvas, raphael, caravaggio, greg rutkowski, beeple, beksinski, giger
+                    </p>
+                    <p><b>Autor:</b></p>
+                    <p>
+                        Dropy64
+                    </p>
+                    <p><b>URL:</b></p>
+                    <p>
+                        <a href = "https://prompthero.com/prompt/4483f0c3243" target="_blank"> https://prompthero.com/prompt/4483f0c3243 </a>
+                    </p>
+                </section>
+                <section data-anime="show-down">
+                    <h2>Stable Diffusion</h2>
+                    <p><b>Prompt:</b></p>
+                    <p>
+                        Masterpiece, Stunning, Best quality, a captivating space-themed artwork featuring the ethereal beauty of swirling nebulas and twinkling stars with 
+                        an astronaut in it dark, blue themed 
+                    </p>
+                    <p><b>Autor:</b></p>
+                    <p>
+                        Galactic
+                    </p>
+                    <p><b>URL:</b></p>
+                    <p>
+                        <a href = "https://prompthero.com/prompt/3beb33c2d55" target="_blank"> https://prompthero.com/prompt/3beb33c2d55  </a>
+                    </p>
+                </section>
+                <section data-anime="show-down">
+                    <h2>Stable Diffusion</h2>
+                    <p><b>Prompt:</b></p>
+                    <p>
+                        Fantasy creature morphing from nemesis, diamond skin, sapphire hair, ice eyes, intricate detail, fantasy, blackmoon dreamlike, the fifth dimension theme 
+                        in a whirlwind of glowing blended sparks and flashlights, perfect proportions, divine proportion, concept art, unrealistic digital painting by Artificial
+                        Nightmares, wlop, artgerm, soft global light, soft focus, smooth, 32 k resolution, Gerald Brom Macro photography, hyper detailed, trending on artstation, 
+                        sharp focus, studio photo, intricate details, highly detailed
+                    </p>
+                    <p><b>Autor:</b></p>
+                    <p>
+                        DamShelma
+                    </p>
+                    <p><b>URL:</b></p>
+                    <p>
+                        <a href = "https://prompthero.com/prompt/ab50c19a940" target="_blank"> https://prompthero.com/prompt/ab50c19a940  </a>
+                    </p>
+                </section>
+                <section data-anime="show-down">
+                    <h2>Stable Diffusion</h2>
+                    <p><b>Prompt:</b></p>
+                    <p>
+                        Showcase the magnificence of Orochi, colorful masterpiece, 1girl, extremely detailed snake with dragon head, fantasy art, whimsical, splash art, 
+                        explosive splashes, ultra detailed ambient, sharp focus, best quality, centered, colorful splash, chinese style, legend of orochi,
 
-        </ul>
-        <div class="modelos-descricao" data-tab="content">
-            <section data-anime="show-down">
-                <h2>Castelo Animado</h2>
-                <p>
-                    Uma bruxa lança uma terrível maldição sobre a jovem Sophie 
-                    transformando-a em uma velha. Desesperada, ela embarca em uma 
-                    odisseia em busca do mago Howl, um misterioso feiticeiro que pode 
-                    ajudá-la a reverter o feitiço.   
-                </p>
-            </section>
-            <section data-anime="show-down">
-                <h2>One Piece - Red</h2>
-                <p>
-                    Uta, a cantora mais amada do planeta, cuja voz foi descrita 
-                    como “de outro mundo”, é conhecida por esconder sua própria 
-                    identidade ao se apresentar. Agora, pela primeira vez, ela se 
-                    revelará ao mundo em um show ao vivo. Com a Marinha assistindo 
-                    de perto, o local se enche de fãs de Uta – incluindo piratas animados 
-                    e os Chapéus de Palha liderados por Luffy, que vieram para curtir 
-                    sua performance. Todos aguardam ansiosamente a voz que o mundo inteiro 
-                    estava esperando. Mas a história começa com uma chocante revelação.  
-                </p>
-            </section>
-            <section data-anime="show-down">
-                <h2>Suzume no Tojimari</h2>
-                <p>
-                    Suzume no Tojimari acompanha dois amantes desafortunatos. 
-                    Suzume, uma garota de 17 anos que vive em uma pacata cidade em Kyushu, 
-                    conhece um jovem em uma jornada “procurando portas”. Ela o segue até um 
-                    prédio em ruínas nas montanhas e encontra uma porta, como se "só ela" fosse 
-                    salva da devastação. Suzume se sente atraída por um poder invisível e estende 
-                    a mão para a porta. Logo, portas em todo o Japão começam a se abrir uma após 
-                    a outra. As portas que se abriram devem ser fechadas para fechar a calamidade 
-                    que jaz do outro lado. Agora, começa a "jornada de fechar portas" de Suzume.   
-                </p>
-            </section>
-            <section data-anime="show-down">
-                <h2>A Voz do Silêncio</h2>
-                <p>
-                    A história de Koe no Katachi gira em torno de Shōko Nishimiya, uma estudante 
-                    do primário que sofre de surdez. Ela é transferida para uma nova escola, mas 
-                    acaba sendo intimidada por seus colegas. Shouya Ishida, um dos valentões 
-                    responsáveis acaba forçando-a para mudar de escola. Como resultado dos atos 
-                    contra Shōko, as autoridades escolares tomam medidas sobre o assunto, Shouya 
-                    é condenado ao ostracismo como punição, sem amigos para falar e não ter planos 
-                    para o futuro. Anos depois, Ishida tenta reparar seus erros, para redimir-se com 
-                    Nishimiya. 
-
-                </p>
-            </section>
-            <section data-anime="show-down">
-                <h2>O Tempo com Você</h2>
-                <p>
-                    A história gira em torno de um garoto do ensino médio chamado Hodaka, que deixa 
-                    sua casa em uma ilha isolada e se muda para Tóquio, algo que o ultrapassa. 
-                    Ele vive seus dias sozinho, mas finalmente encontra um trabalho como escritor 
-                    em uma sombria revista de ocultismo. Depois de iniciar seu trabalho, não parou de 
-                    chover dia após dia. Em um canto da movimentada cidade, Hodaka conhece uma jovem 
-                    chamada Hina. Devido a certas circunstâncias, Hina e seu irmão mais novo moram juntos, 
-                    mas felizes. Hina também tem um certo poder: o poder de parar a chuva e limpar o céu. 
-                </p>
-            </section>
-            <section data-anime="show-down">
-                <h2>Your Name</h2>
-                <p>
-                    A jovem Mitsuha vive em uma pequena cidade nas montanhas chamada Itomori. Seu sonho 
-                    é viver em uma cidade grande. Criada pela avó, com problemas de relacionamento com 
-                    o pai e apoiada pelos dois melhores amigos, ela leva uma vida pacata e sem muitos apuros. 
-                    Do outro lado da história temos o jovem Taki, um garoto que mora em Tóquio e ama desenhar 
-                    prédios e lugares. Os dois poderiam nunca se encontrar, mas uma estranha ligação faz com 
-                    eles troquem de lugar. Quando estão dormindo existe uma troca de corpos onde um vive a 
-                    vida do outro.   
-                </p>
-            </section>
+                    </p>
+                    <p><b>Autor:</b></p>
+                    <p>
+                        Risk_Art077
+                    </p>
+                    <p><b>URL:</b></p>
+                    <p>
+                        <a href = "https://prompthero.com/prompt/821077fcf78" target="_blank"> https://prompthero.com/prompt/821077fcf78  </a>
+                    </p>
+                </section>
+                <section data-anime="show-down">
+                    <h2>Stable Diffusion</h2>
+                    <p><b>Prompt:</b></p>
+                    <p>
+                        This magnificent half human creature with rainbow iridescent skin color, shiny and sparkling, in the rainforest, where it settles in its magical kingdom, 
+                        brilliant painter, talented masterpiece creator, Yann Dalon, Toni Infante, Amr Elshamy, Viktor Miller-Gausa, 300 dpi, artstation trend, intricate details, 
+                        high detail, Patty Hankins Macro photography, hyper detailed
+                    </p>
+                    <p><b>Autor:</b></p>
+                    <p>
+                        DamShelma
+                    </p>
+                    <p><b>URL:</b></p>
+                    <p>
+                        <a href = "https://prompthero.com/prompt/f7bb4d7cca7" target="_blank"> https://prompthero.com/prompt/f7bb4d7cca7  </a>
+                    </p>
+                </section>
+                <section data-anime="show-down">
+                    <h2>OpenJourney</h2>
+                    <p><b>Prompt:</b></p>
+                    <p>
+                        Illustration, a cute steampunk homeless girl , Dave McKean, hyper-realistic, very detailed, micro pen art, dark vignette, film grain, sharp lines, 
+                        high dynamic range, light sepia, greyscale
+                    </p>
+                    <p><b>Autor:</b></p>
+                    <p>
+                        TennBirdDog
+                    </p>
+                    <p><b>URL:</b></p>
+                    <p>
+                        <a href = "https://prompthero.com/prompt/097a1380f97" target="_blank"> https://prompthero.com/prompt/097a1380f97  </a>
+                    </p>
+                </section>
+                <section data-anime="show-down">
+                    <h2>OpenJourney</h2>
+                    <p><b>Prompt:</b></p>
+                    <p>
+                        Summer landscape, Lime color, Bokeh, the waterfall, fog over the lake, insanely detailed and intricate, hypermaximalist, elegant, ornate, hyper realistic, 
+                        super detailed
+                    </p>
+                    <p><b>Autor:</b></p>
+                    <p>
+                        6674dd1a226
+                    </p>
+                    <p><b>URL:</b></p>
+                    <p>
+                        <a href = "https://prompthero.com/prompt/51deadfcc20" target="_blank"> https://prompthero.com/prompt/51deadfcc20  </a>
+                    </p>
+                </section>
+                <section data-anime="show-down">
+                    <h2>OpenJourney</h2>
+                    <p><b>Prompt:</b></p>
+                    <p>
+                        A robot sitting in the lotus pose, representing the fusion of chaos and peacefulness in one work of art that aims to bring tranquility and harmony, 
+                        as well as peacefulness to this world. 4k, realistic, 3d, steampunk style
+                    </p>
+                    <p><b>Autor:</b></p>
+                    <p>
+                        6e6a36696c3
+                    </p>
+                    <p><b>URL:</b></p>
+                    <p>
+                        <a href = "https://prompthero.com/prompt/6cd05b464aa" target="_blank"> https://prompthero.com/prompt/6cd05b464aa  </a>
+                    </p>
+                </section>
+                <section data-anime="show-down">
+                    <h2>OpenJourney</h2>
+                    <p><b>Prompt:</b></p>
+                    <p>
+                        Close-up of a cat (futanari), glitter background, shiny glitter hair, professional profile photo, shiny glitter/crystals, sparkling magic, sparkly and soft, 
+                        glitter gif, glitz pro, soon no more hair, live action,
+                    </p>
+                    <p><b>Autor:</b></p>
+                    <p>
+                        C_Sobi
+                    </p>
+                    <p><b>URL:</b></p>
+                    <p>
+                        <a href = "https://prompthero.com/prompt/7edbb2da8b1" target="_blank"> https://prompthero.com/prompt/7edbb2da8b1  </a>
+                    </p>
+                </section>
+                <section data-anime="show-down">
+                    <h2>OpenJourney</h2>
+                    <p><b>Prompt:</b></p>
+                    <p>
+                        Portrait of a Donald Duck, character design, photorealism, detailed hair, punk art, acid punk, cluttered wall with street art background, ethereal, painted by artgerm, 
+                        Alphonse mucha, Akihiko yoshida, sakimichan, krenz cushart, hq, hyperrealistic
+                    </p>
+                    <p><b>Autor:</b></p>
+                    <p>
+                        a57228d801e
+                    </p>
+                    <p><b>URL:</b></p>
+                    <p>
+                        <a href = "https://prompthero.com/prompt/91d11334f44" target="_blank"> https://prompthero.com/prompt/91d11334f44  </a>
+                    </p>
+                </section>
+            </div>
+        </section>
+        <section class="grid-section classes" data-anime="scroll" id="classes">
+            <h1 class="titulo">Classes</h1>
+            <ul class="classes-lista">
+                <li>Portrait</li>
+                <li>Photography</li>
+                <li>Anime</li>
+                <li>Fashion</li>
+                <li>Concept Art</li>
+            </ul>
+            <ul class="custom-controls">
+                <li><img src="img/portraits/portrait.webp"></li>
+                <li><img src="img/portraits/portrait2.webp"></li>
+                <li><img src="img/portraits/portrait3.webp"></li>
+                <li><img src="img/portraits/portrait4.webp"></li>
+                <li><img src="img/portraits/portrait5.webp"></li>
+                <li><img src="img/photography/photo.webp"></li>
+                <li><img src="img/photography/photo2.webp"></li>
+                <li><img src="img/photography/photo3.webp"></li>
+                <li><img src="img/photography/photo4.webp"></li>
+                <li><img src="img/photography/photo5.webp"></li>
+                <li><img src="img/anime/anime.webp"></li>
+                <li><img src="img/anime/anime2.webp"></li>
+                <li><img src="img/anime/anime3.webp"></li>
+                <li><img src="img/anime/anime4.webp"></li>
+                <li><img src="img/anime/anime5.webp"></li>
+                <li><img src="img/fashion/fashion.webp"></li>
+                <li><img src="img/fashion/fashion2.webp"></li>
+                <li><img src="img/fashion/fashion3.webp"></li>
+                <li><img src="img/fashion/fashion4.webp"></li>
+                <li><img src="img/fashion/fashion5.webp"></li>
+                <li><img src="img/conceptart/concept.webp"></li>
+                <li><img src="img/conceptart/concept2.webp"></li>
+                <li><img src="img/conceptart/concept3.webp"></li>
+                <li><img src="img/conceptart/concept4.webp"></li>
+                <li><img src="img/conceptart/concept5.webp"></li>
+            </ul>
+            <div class="slide-wrapper">
+                <ul class="slide" id="slide-wrapper">
+                    <li><img src="img/portraits/portrait.webp"></li>
+                    <li><img src="img/portraits/portrait2.webp"></li>
+                    <li><img src="img/portraits/portrait3.webp"></li>
+                    <li><img src="img/portraits/portrait4.webp"></li>
+                    <li><img src="img/portraits/portrait5.webp"></li>
+                    <li><img src="img/photography/photo.webp"></li>
+                    <li><img src="img/photography/photo2.webp"></li>
+                    <li><img src="img/photography/photo3.webp"></li>
+                    <li><img src="img/photography/photo4.webp"></li>
+                    <li><img src="img/photography/photo5.webp"></li>
+                    <li><img src="img/anime/anime.webp"></li>
+                    <li><img src="img/anime/anime2.webp"></li>
+                    <li><img src="img/anime/anime3.webp"></li>
+                    <li><img src="img/anime/anime4.webp"></li>
+                    <li><img src="img/anime/anime5.webp"></li>
+                    <li><img src="img/fashion/fashion.webp"></li>
+                    <li><img src="img/fashion/fashion2.webp"></li>
+                    <li><img src="img/fashion/fashion3.webp"></li>
+                    <li><img src="img/fashion/fashion4.webp"></li>
+                    <li><img src="img/fashion/fashion5.webp"></li>
+                    <li><img src="img/conceptart/concept.webp"></li>
+                    <li><img src="img/conceptart/concept2.webp"></li>
+                    <li><img src="img/conceptart/concept3.webp"></li>
+                    <li><img src="img/conceptart/concept4.webp"></li>
+                    <li><img src="img/conceptart/concept5.webp"></li>
+                </ul> 
+            </div>
+        </section>
+        <section class="grid-section autores" data-anime="scroll" id="autores">
+            <h1 class="titulo">Autores</h1>
+            <div class="prompt" data-tooltip aria-label="Prompt Hero">
+                <img src="img/prompthero.jpeg">
+            </div>
+            <d1 class="autores-lista1" data-anime="accordion">
+                <dt>NorthmoorAI</dt>
+                <dd><a href = "https://prompthero.com/NorthmoorAI" target="_blank"> Visite o perfil do autor</a></dd>
+                <dt>OutOfReality</dt>
+                <dd><a href = "https://prompthero.com/OutOfReality" target="_blank"> Visite o perfil do autor</a></dd>
+                <dt>Akasyan</dt>
+                <dd><a href = "https://prompthero.com/Akasyan" target="_blank"> Visite o perfil do autor</a></dd>
+                <dt>Dropy64</dt>
+                <dd><a href = "https://prompthero.com/Dropy64" target="_blank"> Visite o perfil do autor</a></dd>
+            </d1>
+            <d1 class="autores-lista2" data-anime="accordion">    
+                <dt>Galactic</dt>
+                <dd><a href = "https://prompthero.com/ScArecrow23" target="_blank"> Visite o perfil do autor</a></dd>
+                <dt>DamShelma</dt>
+                <dd><a href = "https://prompthero.com/DamShelma" target="_blank"> Visite o perfil do autor</a></dd>
+                <dt>Risk_Art077</dt>
+                <dd><a href = "https://prompthero.com/Risk_Art077" target="_blank"> Visite o perfil do autor</a></dd>
+                <dt>TennBirdDog</dt>
+                <dd><a href = "https://prompthero.com/TennBirdDog" target="_blank"> Visite o perfil do autor</a></dd>
+            </d1>
+            <d1 class="autores-lista3" data-anime="accordion">   
+                <dt>6674dd1a226</dt>
+                <dd><a href = "https://prompthero.com/6674dd1a226" target="_blank"> Visite o perfil do autor</a></dd>
+                <dt>6e6a36696c3</dt>
+                <dd><a href = "https://prompthero.com/6e6a36696c3" target="_blank"> Visite o perfil do autor</a></dd>
+                <dt>C_Sobi</dt>
+                <dd><a href = "https://prompthero.com/C_Sobi" target="_blank"> Visite o perfil do autor</a></dd>
+                <dt>a57228d801e</dt>
+                <dd><a href = "https://prompthero.com/a57228d801e" target="_blank"> Visite o perfil do autor</a></dd>
+            </d1>
+        </section>
+        <section class="grid-section sobre" data-anime="scroll" id="sobre">
+            <h1 class="titulo">Sobre</h1>
+            <ul class="sobre-para">
+                <li>O site tem como objetivo exibir uma ampla variedade de obras de arte geradas por inteligência artificial, com foco na plataforma Prompt Hero.<br>
+                Ele destaca a capacidade da IA na criação artística e promove a colaboração entre humanos e máquinas. <br>
+                Além disso, o site incentiva discussões sobre o papel da IA na arte contemporânea e oferece um espaço para apreciar a diversidade de estilos artísticos que a IA pode produzir.
+                Em essência, o site celebra a fusão da criatividade humana com a tecnologia, explorando novos horizontes na expressão artística.
+                </li>
+            </ul>
+        </section>
+        <footer class="copy">
+            <p>Todos os direitos reservados.</p>
+        </footer>
+    </div>
+    <section class="modal-container" data-modal="container">
+        <div class="modal">
+            <button data-modal="fechar" class="fechar">X</button>
+            <form action="">
+                <label for="email">Email</label>
+                <input type="text" for="email" id="email">
+                <label for="senha">Senha</label>
+                <input type="password" for="senha" id="senha">
+                <button type="submit">Entrar</button>  
+            </form>
         </div>
     </section>
-    <section class="grid-section classes" data-anime="scroll" id="classes">
-        <h1 class="titulo">Classes</h1>
-        <d1 class="classes-lista" data-anime="accordion">
-            <dt>Os filmes são bons?</dt>
-            <dd>São sim, confia.</dd>
-            <dt>Aonde encontro eles?</dt>
-            <dd>Se vira, mas tem nos streamings.</dd>
-            <dt>Em que língua encontro eles?</dt>
-            <dd>Depende, a maioria encontra legendado com dublagem em japonês, mas alguns tem a dublagem brasileira.</dd>
-        </d1>
-    </section>
-    <section class="grid-section contato" data-anime="scroll" id="autores">
-        <h1 class="titulo">Autores</h1>
-        <div class="mapa">
-            <img src="img/mapa.jpg">
-        </div>
-        <ul class="dados">
-            <li>blablabla@gmail.com</li>
-            <li>+55 (21) 4002-8922</li>
-            <li>Japão, 〒160-0018 Tokyo, Shinjuku City, Sugacho, ５</li>
-            <li>Japão, JP</li>
-        </ul>
-    </section>
-    <footer class="copy">
-        <p>Todos os direitos reservados.</p>
-    </footer>
-    <script src="script.js"></script>
-    <script src="animacoes.js"></script>
+    <script type="module" src="/js/script.js"></script>
 </body>
 </html>
