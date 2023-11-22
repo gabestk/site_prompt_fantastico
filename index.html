@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Prompts Fantásticos </title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
@@ -18,7 +18,7 @@
                 <li><a href="#autores">Autores</a></li>
                 <li><a href="#aleatorio">Aleatório</a></li>
                 <li><a href="#sobre">Sobre</a></li>
-                <li><a data-modal="abrir" href="#login">Login →</a></li>
+                <li><a href="logout" onclick="logout()">« Logout </a></li>
             </ul>
         </nav>
         <section class="grid-section modelos" data-anime="scroll" id="modelos">
@@ -420,18 +420,14 @@
             <p>Todos os direitos reservados.</p>
         </footer>
     </div>
-    <section class="modal-container" data-modal="container">
-        <div class="modal">
-            <button data-modal="fechar" class="fechar">X</button>
-            <form action="">
-                <label for="email">Email</label>
-                <input type="text" for="email" id="email">
-                <label for="senha">Senha</label>
-                <input type="password" for="senha" id="senha">
-                <button type="submit">Entrar</button>  
-            </form>
-        </div>
-    </section>
     <script type="module" src="/js/script.js"></script>
 </body>
+
+<script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-auth-compat.js"></script>
+<script src="firebase-init.js"></script>
+<script src="index.js"></script>
+<script src="auth-guard.js"></script>
+
+
 </html>

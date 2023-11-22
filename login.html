@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+    <div class="grid-container">
+        <nav class="menu" data-menu="suave">
+            <ul>
+                <li><a href="#Login">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+    <form>
+        <div class="grid-container login"><label>Email</label>
+            <input type="email" name="email" id="email" placeholder="seu@email.com" onchange="onChangeEmail()"/>
+            <div class="error" id="email-required-error">Email é obrigatório</div>
+            <div class="error" id="email-invalid-error">Email inválido</div>
+        </div>
+        <div class="grid-container login"><label>Senha</label>
+            <input type="password" name="password" id="password" placeholder="Senha" onchange="onChangePassword()"/>
+            <div class="error" id="password-required-error">Senha é obrigatória</div>
+        </div>
+        <div class="grid-container login">
+            <button type="button" id="login-button" disabled="true" onclick="login()">Entrar</button>
+        </div>
+        <div class="grid-container login">
+            <button type="button" onclick="register()">Registrar</button>
+        </div>
+    </form>
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-auth-compat.js"></script>
+<script src="firebase-init.js"></script>
+
+<script src="login.js"></script>
+<script src="validation.js"></script>
+<script src="loading.js"></script>
+
+
+
+</html>

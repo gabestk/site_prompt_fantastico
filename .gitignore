@@ -1,0 +1,8 @@
+.env
+node_modules
+site_prompt_fantastico
+.firebase
+.github/workflows
+.firebaserc
+firebase.json
+.github

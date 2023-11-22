@@ -7,6 +7,7 @@ import initTooltip from "./modules/tooltip.js";
 import initAlternarModelo from "./modules/tabnav-modelos.js";
 import SlideNav from './modules/slide.js';
 
+
 initiScrollSuave();
 initAnimationScroll();
 initAccordion();
@@ -15,9 +16,10 @@ initModal();
 initTooltip();
 initAlternarModelo();
 
-
 const slide = new SlideNav('.slide', '.slide-wrapper');
 slide.init();
-slide.addControl('.custom-controls');
+slide.addControl('.custom-controls'); 
 
-
+document.getElementById('registerBtn').onclick = function() {
+    window.location.href = 'login.html'
+}

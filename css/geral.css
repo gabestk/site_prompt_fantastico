@@ -119,6 +119,18 @@ body {
     margin-bottom: 1rem;
 }
 
+button [type="button"]{
+    display: block;
+    padding: 90px;
+    color: #222;
+    text-decoration: none;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .1em;
+}
+
 .classes-content-hidden {
     display: none;
 }

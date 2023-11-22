@@ -66,8 +66,8 @@
     box-sizing: border-box;
 }
 
-.modal button[type="submit"] {
-    display: block;
+.modal button[type="submit"], [type="register"] {
+    display: inline-block;
     background-color: rgb(200, 88, 88);
     border: none;
     border-radius: 4px;
