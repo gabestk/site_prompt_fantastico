@@ -7,8 +7,6 @@ site_prompt_fantastico
 firebase.json
 .github
 config.js
-firebase-init.js
 package.json
 package-lock.json
-firebase-init-config.js
 firebase-init.js
