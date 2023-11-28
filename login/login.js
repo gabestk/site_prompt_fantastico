@@ -70,4 +70,16 @@ const form = {
     loginButton: () => document.getElementById("login-button"),
     password: () => document.getElementById("password"),
     passwordRequiredError: () => document.getElementById("password-required-error"),
-} 
+}
+
+function criarImagem() {
+    window.location.href = "prompt.html";
+}
+
+function onPasswordEnterKeyPress(event) {
+    if (event.key === 'Enter') {
+        login();
+    }
+}
+
+document.getElementById('password').addEventListener('keydown', onPasswordEnterKeyPress);

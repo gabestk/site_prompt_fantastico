@@ -23,3 +23,4 @@ slide.addControl('.custom-controls');
 document.getElementById('registerBtn').onclick = function() {
     window.location.href = 'login.html'
 }
+

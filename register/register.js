@@ -89,3 +89,11 @@ const form = {
     passwordMinLenghtError: () => document.getElementById("password-min-lenght-error"),
     registerButton: () => document.getElementById("register-button")
 }
+
+function onConfirmPasswordEnterKeyPress(event) {
+    if (event.key === 'Enter') {
+        register();
+    }
+}
+
+document.getElementById('confirm-password').addEventListener('keydown', onConfirmPasswordEnterKeyPress);
